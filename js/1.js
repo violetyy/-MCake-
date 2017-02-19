@@ -1,3 +1,30 @@
+//写cookies
+function setCookie(name,value)
+{
+    var Days = 30;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+}
+
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}
+
+function delCookie(name)
+{
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval!=null)
+        document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+}
+
 //商品弹框功能
 $(document).on("mouseover",".pic_grid li",function(){
     //stop()是阻止在连续动画或事件中出现重复累积状况的方法。
@@ -103,7 +130,7 @@ $('.login_btn').click(function(){
             }
         }
     })
-})
+});
 
 //会员中心-register page
 

@@ -71,15 +71,14 @@ $("ul.Select_view li").click(function () {
 $(document).data('Car',[]);
 
 $("#add_cart").click(function(e){
-    var _name = $('.pro_name span').html()
-    var _price = +$('#price').html();
-    var _num = +$('#buy_number').val();
-    var Car = $(document).data("Car");
-    Car.push({
-        name:_name,
-        price:_price,
-        num:_num
-    });
+    //var _name = $('.pro_name span').html()
+    //var _price = +$('#price').html();
+    //var buy_num = +$('#buy_number').val();
+
+    var num = +getCookie("cartNum") || 0;
+    var _num = +$('.num_1').val();
+    $('#cartNum').html(num + _num);
+    setCookie("cartNum",num + _num);
     alert("已经成功添加到购物车");
 })
 

@@ -1801,7 +1801,7 @@ ul.order_content li.buy_car_list td.pro_left{
 ul.order_content li.buy_car_list .cake_num{
     overflow:hidden;
     margin:0 auto;
-    width:56px;
+    /*width:56px;*/
 }
 
 dl{
@@ -1811,11 +1811,11 @@ dl{
 
 .cake_num dl dd {
     float: left;
-    width: 1pc;
-    height: 20px;
-    background: 0 0;
-    font-size: 1pc;
-    line-height: 20px;
+    width: 35px;
+    height: 25px;
+    /*background: 0 0;*/
+    /*font-size: 1pc;*/
+    /*line-height: 20px;*/
     cursor: pointer;
 }
 

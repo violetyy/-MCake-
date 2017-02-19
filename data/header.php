@@ -17,7 +17,7 @@ header('Content-Type:text/html;charset=UTF-8');
                              <li class="myCart">
                                  <a href="shopcart2.html" target="_blank">
                                      <i></i>
-                                     <span>1</span>件
+                                     <span id="cartNum">0</span>件
                                  </a>
                              </li>
                          </ul>
