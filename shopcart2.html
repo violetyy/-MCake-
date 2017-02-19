@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车-shopcart2</title>
+    <link rel="stylesheet" href="css/1.css">
+</head>
+<body>
+<div id="header"></div>
+<div id="page_mainer">
+    <div class="user_box">
+        <div class="user_title">
+            <p class="cart_img">
+                <i></i>
+                <span>购物车</span>
+            </p>
+        </div>
+        <div class="order_list">
+            <ul class="buy_flow">
+                <li class="lur">
+                    <p>我的购物车</p>
+                </li>
+                <li>
+                    <span>></span>
+                </li>
+                <li>
+                    <p>填写订单信息</p>
+                </li>
+                <li>
+                    <span>></span>
+                </li>
+                <li>
+                    <p>完成订单</p>
+                </li>
+            </ul>
+            <ul class="view_list all_list">
+                <!--全部订单-->
+                <li class="cur">
+                    <ul class="order_title">
+                       <li class="order_pro">商品信息</li>
+                        <li>规格</li>
+                        <li>单价（元）</li>
+                        <li>数量</li>
+                        <li>金额</li>
+                        <li>操作</li>
+                    </ul>
+                    <ul class="order_content" style="overflow:inherit">
+                        <li class="buy_car_list">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+
+                                   <tr class="border_top">
+                                       <td colspan="7" class="order_activity cartCheck" style="border-top:0px ;">
+                                           <span>
+                                               <i></i>
+                                               <em class="all_cur"></em>
+                                               <input type="checkbox" hidden="hidden">
+                                           </span>
+                                           全选
+                                       </td>
+                                   </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <div class="clear"></div>
+                    </ul>
+                </li>
+                <li class="cur Total">
+                    <div class="Total_all">
+                        <span>
+                            <i>
+                                己选择
+                                <samp id="total_amount">0</samp>
+                                款商品
+                            </i>
+                              合计（不含运费）：
+                            <b id="total_money"> ￥0.00</b>
+
+                        </span>
+                        <div style="float:right;">
+                            <input type="button" value="继续购物" class="login_btn">
+
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div id="footer"></div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/1.js"></script>
+<script type="text/javascript" src="js/car.js"></script>
+<script type="text/html" id="CarItem">
+
+    <tr>
+        <td style="padding-left:20px;border-bottom:1px solid #d9e8ec;" class="cartCheck">
+                                        <span>
+                                            <i></i>
+                                            <em></em>
+                                            <input type="checkbox" hidden="hidden">
+                                        </span>
+        </td>
+        <td class="pro_left" style="border-bottom:1px solid #d9e8ec;">
+            <div class="buy_pro_img">
+                <a href="detail.html" target="_blank">
+                    <img src=<%= imgurl %> width="114" height="114" alt="Cici">
+                </a>
+            </div>
+            <div class="alert">
+                <a href="detail.html" target="_blank" class="Grey">
+                    <b>Cici</b>
+                </a>
+                Cici
+                <br>
+                <br>
+                赠品：标配餐具(餐勺七把)1套
+            </div>
+        </td>
+        <td width="10%" style="border-bottom:1px solid #d9e8ec;">
+            <div class="cake_num">1盒</div>
+        </td>
+        <td width="10%" style="border-bottom:1px solid #d9e8ec;">￥<%=%></td>
+        <td width="10%" style="border-bottom:1px solid #d9e8ec;">
+            <div class="cake_num">
+                <dl>
+                    <dd class="n_left">-</dd>
+                    <dt>
+                        <input type="text" value="1">
+                    </dt>
+                    <dd class="n_right">+</dd>
+                </dl>
+            </div>
+        </td>
+        <td width="10%" style="border-bottom:1px solid #d9e8ec;">
+            ￥<%= Price%>
+        </td>
+        <td width="10%" style="border-bottom:1px solid #d9e8ec;">
+            <a href="#">删除</a>
+        </td>
+    </tr>
+</script>
+
+</body>
+</html>

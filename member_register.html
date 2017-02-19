@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心-Register Page</title>
+    <link rel="stylesheet" href="css/1.css">
+</head>
+<body>
+<div id="header"></div>
+<div id="memberCenter">
+    <div class="login_box">
+        <form onsubmit="return false">
+            <div class="login_right register_left">
+               <ul>
+                   <li>
+                       <p class="top">
+                           <span>会员注册</span>
+                       </p>
+                   </li>
+                   <li>
+                       <label for="loginName">手机号码</label>
+                       <input type="text" class="input_txt Cellphone_icon" id="loginName" name="loginName" autocomplete="off">
+                       <span class="err" id="loginName_error">请输入手机号码</span>
+                   </li>
+                   <li>
+                       <label for="checkCode">手机验证码</label>
+                       <input type="text" class="input_txt Cellphone_code_icon" id="checkCode" name="checkCode" maxlength="6">
+                       <div class="send">
+                           <a href="#" class="go">
+                               发送验证码
+                               <small>>></small>
+                           </a>
+                           <p class="err"></p>
+                       </div>
+                   </li>
+                   <li>
+                       <label for="loginPwd">新密码</label>
+                       <input type="password" class="input_txt password_icon" id="loginPwd" name="loginPwd" >
+                       <span class="err" id="loginPwd_error">密码必须是6-30位字符，可使用字母、数字</span>
+                   </li>
+                   <li>
+                       <label for="confirmPwd">密码确认</label>
+                       <input type="password" class="input_txt  Confirm_password_icon" id="confirmPwd" name="confirmPwd" >
+                       <span class="err" id="confirmPwd_error"></span>
+                   </li>
+                   <li class="Agreement">
+                       <i></i>
+                       <em style="background-position:0px -280px "></em>
+                       <input type="checkbox" hidden="hidden" checked="checked">
+                       <p>
+                           <a href="#">同意 《M'cake购物协议》</a>
+                       </p>
+
+                   </li>
+                   <li>
+                       <div class="btn_box">
+                           <input type="button" value="提交" class="login_btn">
+                       </div>
+                   </li>
+               </ul>
+            </div>
+        </form>
+        <div class="register_right">
+            <a href="member_login.html">
+              <span>
+                  <i></i>
+                  <p>
+                    我已经注册,
+                      <br>
+                     现在就
+                    <samp style="color:#a5002f;">登录</samp>
+                  </p>
+              </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/ebsig.min.js"></script>
+<script type="text/javascript" src="js/1.js"></script>
+</body>
+</html>

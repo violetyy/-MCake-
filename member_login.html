@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心-Login Page</title>
+    <link rel="stylesheet" href="css/1.css">
+</head>
+<body>
+<div id="header"></div>
+<div id="memberCenter">
+  <div class="login_box">
+      <div class="login_left">
+          <span>Veuillez signer</span>
+          <p>
+              Inviter des amis
+              <br>
+              peut être mystérieux.
+          </p>
+          <i>Vous avez besoin de remplir le numéro de téléphone de votre login</i>
+      </div>
+      <div class="login_right">
+          <form onsubmit="return false;">
+              <ul>
+                  <li>
+                      <p class="top">
+                          <span>用户登录</span>
+                      </p>
+                  </li>
+                  <li>
+                      <label for="loginName">手机号码</label>
+                      <input type="text" class="input_txt user_icon" id="loginName" name="loginName" autocomplete="off">
+                      <span class="err" id="loginName_error">用户名不能为空</span>
+                  </li>
+                  <li>
+                      <label for="loginPwd">请输入密码</label>
+                      <input type="password" class="input_txt password_icon" id="loginPwd" name="loginPwd" >
+                      <span class="err" id="loginPwd_error"></span>
+                  </li>
+                  <li>
+                      <input type="button" value="登录" class="login_btn">
+                      <a href="#" class="note">忘记密码 ？</a>
+                  </li>
+                  <li>
+                      提示：还不是会员？
+                      <a href="member_register.html" class="register">立即注册</a>
+                  </li>
+                  <li>
+                     <p class="bottom">使用合作网站帐号登录</p>
+                      <dl>
+                          <dd>
+                              <a href="#" class="weibo"></a>
+                          </dd>
+                          <dd>
+                              <a href="#" class="alipay"></a>
+                          </dd>
+                      </dl>
+                  </li>
+              </ul>
+          </form>
+      </div>
+  </div>
+</div>
+<div id="footer"></div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/ebsig.min.js"></script>
+<script type="text/javascript" src="js/1.js"></script>
+</body>
+</html>

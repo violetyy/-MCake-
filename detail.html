@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页-Products Details</title>
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.jqzoom.css" />
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="page_mainer">
+     <div class="page_details">
+         <div class="Product_details_box">
+             <div class="view_img">
+                 <!--小图列表-->
+                 <div class="small_left">
+                     <div class="top_btn">
+                         <i></i>
+                     </div>
+                     <div class="small_img_box">
+                         <ul id="thumblist" class="small_img_list">
+                             <li>
+                                 <a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: 'images/de4.jpg',largeimage: 'images/bigPic.jpg'}">
+                                     <img src="images/de1.jpg">
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: 'images/del5.jpg',largeimage: 'images/bigpic2.jpg'}">
+                                     <img src="images/de2.jpg">
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: 'images/del6.jpg',largeimage: 'images/bigpic3.jpg'}">
+                                     <img src="images/de3.jpg">
+                                 </a>
+                             </li>
+                         </ul>
+
+                     </div>
+                     <div class="bottom_btn">
+                         <i></i>
+                     </div>
+                 </div>
+                 <!--大图展示-->
+                 <div class="big_right">
+                     <!--上面图片-->
+                     <a href="images/bigpic.jpg" class="jqzoom" rel='gal1' title="大图">
+                         <img src="images/de4.jpg" class="img480">
+                     </a>
+                     <!--下面文字-->
+                     <div class="words_below">
+                         <p class="en_copy">
+
+                            
+                            Sept Cupcakes, dans les quels vous découvriez quatre goûts différents. La génoise moelleuse avec le coulis dedans, plusieurs couches de joies goûteuses. Au jardin de printemps, partager vos sentiments originaux avec les amis, la famille, les amoureux et vous-même.
+                        
+
+                         </p>
+                         <p class="cn_copy">
+
+                            
+                            七枚cupcake，四种绝妙口味。新鲜烘焙蛋糕胚，包裹着的夹心，一层口感一层梦境，无法摆脱的美味。把最初的心情，在微风轻拂的花园里，与恋人，亲人，闺蜜当然还有自己，分享。
+                        
+
+                         </p>
+                     </div>
+                 </div>
+             </div>
+             <div class="Pro_parameters_box">
+                <div class="pro_name">
+                    <span>Cici</span>
+                    Cici
+                </div>
+                <div class="pro_pire">
+                    ￥
+                    <span id="price">268.00</span>
+                    <span class="split-lilne">|</span>
+                    <div class="scan_goods">
+                        <img src="./images/min-qcode.jpg" class="price-qcode">
+                        <span class="scan-text">扫一扫享优惠</span>
+                    </div>
+                    <div class="qcode-masks" style="display: none;">
+                        <p style="font-size: 14px;">手机下单</p>
+                        <p class="pay-discount">微信支付<span>9.8</span>折</p>
+                        <img src="./images/qrcode.png">
+                        <br>
+                    </div>
+                </div>
+                <ul class="change_p">
+                    <li id="size_id_11687" edible="" size="SIZE:7个/盒" aheadtime="需提前5小时预定" class="cur">
+                        <div></div>
+                        <span>1盒</span>
+                    </li>
+                </ul>
+                <div class="pro_desc">
+                    <span id="g_edible"></span>
+                    <span id="g_size">SIZE:7个/盒</span>
+                    <p id="g_aheadTime">需提前5小时预定</p>
+                </div>
+                <div class="cake_num">
+                    <span>数量</span>
+                    <dl>
+                        <dd class="n_left nopoint"></dd>
+                        <dt><input name="" type="text" value="1" class="num_1" id="buy_number"></dt>
+                        <dd class="n_right"></dd>
+                    </dl>
+                </div>
+                <div class="add_dolls">
+                    <div class="ad_left">
+                        <span>升级</span>
+                    </div>
+                    <div class="ad_center">
+                        <div class="adc_check  no_check" id="HGR0214" data="R0214"></div>
+                        <div class="adc_text">购买任意款蛋糕<b>+38</b>元获得<br>蛋糕配饰DIY体验<br></div>
+                    </div>
+                    <div class="ad_right">
+                        <span id="HGPOPR0214">
+                            <img src="images/ad.jpg">
+                        </span>
+                    </div>
+                </div>
+                <div class="add_dolls">
+                    <div class="ad_left">
+                        <span>换购</span>
+                    </div>
+                    <div class="ad_center">
+                        <div class="adc_check no_check" id="HGR0206" data="R0206"></div>
+                        <div class="adc_text">购买任意款蛋糕<b>+48</b>元换购<br>1/4牛奶生巧 M' chocolate<br></div>
+                    </div>
+                    <div class="ad_right">
+                        <span id="HGPOPR0206">
+                            <img src="images/ad02.jpg">
+                        </span>
+                    </div>
+                </div>
+                <ul class="buy_btn_box">
+                    <li>
+                        <input type="button" value="加入购物车" class="add_cart" id="add_cart">
+                    </li>
+                    <li>
+                        <input type="button" value="立即购买" class="buy_now" id="buy_now">
+                    </li>
+                    <input type="hidden" value="11687" id="pro_id">
+                </ul>
+                <div class="pro_Explain">
+                </div>
+                <ul class="Select_view">
+                    <li class="cur"><span>Best Ingredient</span>
+                        <p>优质原材料</p></li>
+                    <li><span>Evaluation</span>
+                        <p id="comments_count">累计点评(107)</p></li>
+                </ul>
+                <ul class="view_list">
+                    <li class="m_cake cur">
+                        <dl>
+                            <dd><img src="./images/2014081310592738116.jpg"><span>比利时黑巧克力</span></dd>
+                            <dd><img src="./images/2014081311001143310.jpg"><span>法国可可粉</span></dd>
+                            <dd><img src="./images/2014081311051082745.jpg"><span>新西兰黄油</span></dd>
+                            <dd><img src="./images/2015122310113324304.png"><span>臻选白砂糖</span></dd>
+                            <dd><img src="./images/2014081311001143310.jpg"><span>法国番石榴糖浆</span></dd>
+                            <dd><img src="./images/2014081311051082745.jpg"><span>新西兰奶油奶酪</span></dd>
+                            <dd><img src="./images/2016030413322231786.jpg"><span>荷兰力娇酒</span></dd>
+                            <dd><img src="./images/2014081311001143310.jpg"><span>法国奶油</span></dd>
+                        </dl>
+                        <ul>
+                            <li class="Basic">
+                                <dl>
+                                    <dd>
+                                        <span>Texture</span>
+                                        <span>口感</span>
+                                        <samp>
+                                            绵软细腻
+                                        </samp>
+                                    </dd>
+                                    <dd>
+                                        <span>Flavor</span>
+                                        <span>口味</span>
+                                        <samp>
+                                            奶油
+                                        </samp>
+                                    </dd>
+                                    <dd>
+                                        <span>Base</span>
+                                        <span>口味基底</span>
+                                        <samp>
+                                            Whipping Cream
+                                        </samp>
+                                    </dd>
+                                    <dd>
+                                        <span>Sweetness</span>
+                                        <span>甜味</span>
+                                        <ul class="Sweet">
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </dd>                                    
+                                </dl>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--评论类别-->
+                        <ul class="Review_top">
+                            <li>
+                                <dl>
+                                    <dd>
+                                        <a href="javascript: void(0);" onclick="G.goods.commentForItem(1, 1);">
+                                            非常好吃<span>(72)</span>
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript: void(0);" onclick="G.goods.commentForItem(2, 1);">
+                                            配送服务好<span>(62)</span>
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript: void(0);" onclick="G.goods.commentForItem(3, 1);">
+                                            口感细腻<span>(53)</span>
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript: void(0);" onclick="G.goods.commentForItem(4, 1);">
+                                            清甜可口<span>(46)</span>
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript: void(0);" onclick="G.goods.commentForItem(5, 1);">
+                                            蛋糕很漂亮<span>(93)</span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <!--评论类别 end-->
+                        <!--评论列表-->
+                        <ul class="Review_list" id="comment_list">
+                            <li>
+                                <p class="com_txt">有创意，好看</p>
+                                <div>
+                                    <p>
+                                        <span class="level level2"></span>
+                                        <span class="level_m">会员</span>
+                                        <span>136****9729</span>
+                                    </p>
+                                    <small>2017-01-24 17:31</small>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="com_txt">既有美貌，又有口感的蛋糕</p>
+                                <div>
+                                    <p>
+                                        <span class="level level2"></span>
+                                        <span class="level_m">会员</span>
+                                        <span>137****9016</span>
+                                    </p>
+                                    <small>2017-01-23 08:51</small>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="com_txt">既有美貌，又有口感的一款蛋糕</p>
+                                <div>
+                                    <p>
+                                        <span class="level level2"></span>
+                                        <span class="level_m">会员</span>
+                                        <span>137****9016</span>
+                                    </p>
+                                    <small>2017-01-23 08:50</small>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="com_txt">好吃</p>
+                                <div>
+                                    <p>
+                                        <span class="level level3"></span>
+                                        <span class="level_m">会员</span>
+                                        <span>137****0502</span>
+                                    </p>
+                                    <small>2017-01-21 16:51</small>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="com_txt">不仅美味，而且高颜值</p>
+                                <div>
+                                    <p>
+                                        <span class="level level2"></span>
+                                        <span class="level_m">会员</span>
+                                        <span>186****1881</span>
+                                    </p>
+                                    <small>2017-01-14 08:21</small>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="Review_nav" id="paging">
+                            <div class="page_nav">
+                                <div class="left">
+                                    <a href="javascript: void(0);"></a>
+                                </div>
+                                <ul>
+                                    <li><a href="javascript: void(0);">1</a></li>
+                                    <li><a href="javascript: G.goods.comment(2);">2</a></li>
+                                    <li><a href="javascript: G.goods.comment(3);">3</a></li>
+                                    <li><a href="javascript: G.goods.comment(4);">4</a></li>
+                                    <li><a href="javascript: G.goods.comment(5);">5</a></li>
+                                    <li><a href="javascript: void(0);">...</a></li>
+                                    <li><a href="javascript: G.goods.comment(22);">22</a></li>
+                                </ul>
+                    
+                                <div class="right">
+                                    <a href="javascript: G.goods.comment(2);"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--评论列表结束-->
+                    </li>
+                </ul>
+            </div>
+         </div>
+     </div>
+        <div class="Details_box">
+            <div class="Designer">
+                <h1>
+                    <img src="images/title.png" >
+                </h1>
+                <p>
+                    Les fantaisies des petites filles sont toujours protégées par notre le héros, tous les rêves peuvent être réalisés par le prince charmant. Un rendez-vous parfait avec nos gateuax CICI.
+                    <br>
+                    不可控制的少女心，总会有人为你守护；不切实际的梦，总会有人替你完成。尝一口清新甜香入心，如花绽放，完美遇见。
+
+                </p>
+            </div>
+        <div class="pro_Layered cake_42">
+        </div>
+         <div class="main_title">
+             <div class="other_pro">
+                 <em></em>
+                 <span>销量排行榜</span>
+             </div>
+         </div>
+         <!--产品列表-->
+         <div class="listBox">
+             <ul class="pic_grid">
+                 <li>
+                     <div class="pro_box">
+                         <a href="#" target="_blank">
+                             <img src="images/list1.jpg" width="216" height="216">
+                         </a>
+                         <div class="mask" style="bottom:-55px;">
+                             <a href="#" target="_blank">
+                                 <p>蓝莓轻乳拿破仑</p>
+                             </a>
+                             <div class="CandyBox">
+                                 <a href="#" target="_blank">
+                                     <i>1</i>
+                                     <span>甜度指数：</span>
+                                     <ul class="Sweetness">
+                                         <li></li>
+                                     </ul>
+                                 </a>
+                                 <div class="buyIcon">
+                                     <a href="#" target="_blank"></a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="pro_title">
+                         <a href="#" target="_blank">
+                             <span class="name01">Napoléon aux myrtilles</span>
+                             <span>2磅/298RMB</span>
+                         </a>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="pro_box">
+                         <a href="#" target="_blank">
+                             <img src="images/list2.jpg" width="216" height="216">
+                         </a>
+                         <div class="mask" style="bottom:-55px;">
+                             <a href="#" target="_blank">
+                                 <p>拿破仑莓恋</p>
+                             </a>
+                             <div class="CandyBox">
+                                 <a href="#" target="_blank">
+                                     <i>1</i>
+                                     <span>甜度指数：</span>
+                                     <ul class="Sweetness">
+                                         <li></li>
+                                     </ul>
+                                 </a>
+                                 <div class="buyIcon">
+                                     <a href="#" target="_blank"></a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="pro_title">
+                         <a href="#" target="_blank">
+                             <span class="name01">Napoléon aux fraises</span>
+                             <span>2磅/298RMB</span>
+                         </a>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="pro_box">
+                         <a href="#" target="_blank">
+                             <img src="images/list3.jpg" width="216" height="216">
+                         </a>
+                         <div class="mask" style="bottom:-55px;">
+                             <a href="#" target="_blank">
+                                 <p>蔓越莓红丝绒</p>
+                             </a>
+                             <div class="CandyBox">
+                                 <a href="#" target="_blank">
+                                     <i>1</i>
+                                     <span>甜度指数：</span>
+                                     <ul class="Sweetness">
+                                         <li></li>
+                                     </ul>
+                                 </a>
+                                 <div class="buyIcon">
+                                     <a href="#" target="_blank"></a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="pro_title">
+                         <a href="#" target="_blank">
+                             <span class="name01">Velour rouge</span>
+                             <span>2磅/298RMB</span>
+                         </a>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="pro_box">
+                         <a href="#" target="_blank">
+                             <img src="images/list4.jpg" width="216" height="216">
+                         </a>
+                         <div class="mask" style="bottom:-55px;">
+                             <a href="#" target="_blank">
+                                 <p>尼诺</p>
+                             </a>
+                             <div class="CandyBox">
+                                 <a href="#" target="_blank">
+                                     <i>1</i>
+                                     <span>甜度指数：</span>
+                                     <ul class="Sweetness">
+                                         <li></li>
+                                     </ul>
+                                 </a>
+                                 <div class="buyIcon">
+                                     <a href="#" target="_blank"></a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="pro_title">
+                         <a href="#" target="_blank">
+                             <span class="name01">Nino</span>
+                             <span>标准款/298RMB</span>
+                         </a>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="pro_box">
+                         <a href="#" target="_blank">
+                             <img src="images/list5.jpg" width="216" height="216">
+                         </a>
+                         <div class="mask" style="bottom:-55px;">
+                             <a href="#" target="_blank">
+                                 <p>爱丽丝玫瑰</p>
+                             </a>
+                             <div class="CandyBox">
+                                 <a href="#" target="_blank">
+                                     <i>1</i>
+                                     <span>甜度指数：</span>
+                                     <ul class="Sweetness">
+                                         <li></li>
+                                     </ul>
+                                 </a>
+                                 <div class="buyIcon">
+                                     <a href="#" target="_blank"></a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="pro_title">
+                         <a href="#" target="_blank">
+                             <span class="name01">Jardin d'Alice</span>
+                             <span>1.5磅/298RMB</span>
+                         </a>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+     </div>
+    
+ </div>
+    <div id="footer">
+        <div class="wallbox">
+            <ul class="activity_list">
+                <li><a href="#" target="_blank"><img src="images/list6.jpg"></a></li>
+                <li><a href="#" target="_blank"><img src="images/5.jpg"></a></li>
+                <li><a href="#" target="_blank"><img src="images/4.jpg"></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/1.js"></script>
+    <script src="js/detail.js"></script>
+    <script type="text/javascript" src="js/jquery.jqzoom-core.js"></script>
+
+
+
+
+ <script>
+     /* 图片放大镜 */
+     $('.jqzoom').jqzoom({
+         zoomType:'reverse',
+         lens:'true',
+         preloadImages:false,
+         alwaysOn:false
+     });
+
+ </script>
+</body>
+</html>
